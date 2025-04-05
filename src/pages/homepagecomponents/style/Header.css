@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 400px; /* Ajuste conforme o tamanho que deseja para o banner */
+  overflow: hidden; /* Isso vai esconder qualquer parte da imagem que ultrapasse o contêiner */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.3); Camada preta com 30% de opacidade */
+    z-index: 1; /* Garante que a sobreposição fique acima da imagem, mas abaixo do texto */
+  }
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  margin-top: 69px;
+  object-fit: cover; /* Faz a imagem cobrir toda a área do banner sem distorcer */
+  object-position: center; /* Garante que a imagem se concentre no centro */
+}
+
+.banner-text {
+  position: absolute; /* Posiciona o texto sobre a imagem */
+  top: 50%; /* Posiciona o texto no meio verticalmente */
+  left: 50%; /* Posiciona o texto no meio horizontalmente */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta o texto para que ele fique exatamente no centro */
+  color: white; /* Cor do texto */
+  font-size: 2rem; /* Tamanho do texto */
+  font-weight: bold; /* Peso da fonte */
+  text-align: center; /* Alinha o texto no centro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para dar mais contraste */
+}
+
+
+
+/* PRODUTOS */
+
+.produtos .card-produto{
+    color: #fff;
+    margin-top: 12px;
+    width: 270px;
+    border-radius: 12px;
+    background-color: rgba(245, 76, 9, 0.493);
+}
+
+.produtos .card-produto .image img{
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+}
+
+.produtos .card-produto .prod-info{
+    padding-left: 8px;
+    padding-bottom: 5px;
+}
+
+
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cria um grid com colunas que se ajustam automaticamente */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+  }
+  
+  .produto {
+    background-color: #f4f4f4; /* Cor de fundo para cada item */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .produto img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Borda arredondada na imagem */
+  }
+  
+  .produto p {
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-size: 1.1rem;
+    color: #333; /* Cor do texto */
+  }
+  
+
+
+
